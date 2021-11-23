@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "@dhmk/atom": {
+      "signature": "e7b85b67d66ff062efa92d933131ee31",
+      "file": true,
+      "replaced": "E:/js/@dhmk/atom"
+    }
+  }
+}
