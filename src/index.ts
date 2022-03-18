@@ -14,7 +14,7 @@ const noop = () => {};
 const useUpdate = () => React.useReducer((x) => (x + 1) & 0xffffffff, 0)[1];
 
 const construct =
-  Reflect?.construct ??
+  (typeof Reflect === "undefined" ? null : Reflect.construct) ??
   ((ctor: any, args: any, target: any) => {
     const x = new ctor(...args);
     Object.setPrototypeOf(x, target.prototype);
